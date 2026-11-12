@@ -1,0 +1,27 @@
+[
+  {
+    "instruction": "What is machine learning?",
+    "input": "",
+    "output": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."
+  },
+  {
+    "instruction": "Explain neural networks simply.",
+    "input": "",
+    "output": "Neural networks are computing systems inspired by the human brain. They consist of interconnected layers of nodes that process information by transforming inputs through weighted connections."
+  },
+  {
+    "instruction": "What is a transformer model?",
+    "input": "",
+    "output": "A transformer is a deep learning architecture that uses self-attention mechanisms to process sequences. It allows the model to weigh the importance of different parts of the input simultaneously, making it highly effective for language tasks."
+  },
+  {
+    "instruction": "What is overfitting in ML?",
+    "input": "",
+    "output": "Overfitting happens when a model learns the training data too well, including its noise and outliers. The result is high accuracy on training data but poor performance on new, unseen data."
+  },
+  {
+    "instruction": "What is transfer learning?",
+    "input": "",
+    "output": "Transfer learning is when a model trained on one task is repurposed as the starting point for a model on a second task. It leverages learned features from the first task to improve performance on the new task with less data."
+  }
+]

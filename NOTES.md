@@ -7,12 +7,8 @@ It is why we like music.  Music is patterns, and breaking patterns.  You enjoy l
 For humans, patterns are one of the first things you can probably remember from when you were a little kid.  Learning to clap your hands in some kind of rythm.  The patterns of your daily life, and the time the pattern was broken and you got to go somewhere new.
 
 
-bash
-source .venv/bin/activate
-python run.py "What is machine learning?"
 
-
-Types of pattern training data:
+Simple examples of pattern data:
 
 Explain the pattern
 1, 2, 3, 4

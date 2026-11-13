@@ -35,6 +35,9 @@
 source .venv/bin/activate
 pip install -r requirements.txt   # if starting fresh
 python train.py                   # run the template script
+
+source .venv/bin/activate
+python run.py "What is machine learning?"
 ```
 
 ## Model Cache Location

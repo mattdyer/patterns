@@ -16,6 +16,7 @@ from transformers import (
     AutoTokenizer,
     BitsAndBytesConfig,
 )
+from peft import LoraConfig
 from trl import SFTConfig, SFTTrainer
 from datasets import Dataset
 
@@ -36,19 +37,19 @@ bnb_config = BitsAndBytesConfig(
 
 # ── LoRA config ────────────────────────────────────────────────────────
 # Only ~1-2% of parameters updated; keeps VRAM low
-LORA_CONFIG = {
-    "r": 16,
-    "lora_alpha": 32,
-    "lora_dropout": 0.05,
-    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj",
-                       "gate_proj", "up_proj", "down_proj"],
-    "bias": "none",
-}
+LORA_CONFIG = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    lora_dropout=0.05,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
+                    "gate_proj", "up_proj", "down_proj"],
+    bias="none",
+)
 
 # ── Training hyperparameters ───────────────────────────────────────────
 TRAIN_ARGS = {
     # Data
-    "max_seq_length": 512,          # Keep low for 8GB VRAM
+    "max_length": 512,          # Keep low for 8GB VRAM
 
     # Optimization
     "learning_rate": 2.0e-4,
@@ -58,12 +59,12 @@ TRAIN_ARGS = {
     "optim": "adamw_8bit",           # 8-bit optimizer saves VRAM
 
     # Scheduling
-    "warmup_ratio": 0.05,
+    "warmup_steps": 10,
     "lr_scheduler_type": "cosine",
 
-    # Precision & memory
+    # Precision — disabled; QLoRA controls precision via compute_dtype
     "bf16": False,
-    "fp16": True,
+    "fp16": False,
     "gradient_checkpointing": True,
 
     # Logging
@@ -92,7 +93,7 @@ def load_model():
         MODEL_PATH,
         quantization_config=bnb_config,
         device_map={"": 0},
-        torch_dtype=torch.float16,
+        dtype=torch.float16,
     )
 
 
@@ -131,7 +132,7 @@ def train():
 
     trainer = SFTTrainer(
         model=model,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         train_dataset=dataset,
         args=sft_args,
         peft_config=LORA_CONFIG,

@@ -60,7 +60,7 @@ def load_model_and_adapter():
         MODEL_PATH,
         quantization_config=bnb_config,
         device_map={"": 0},
-        torch_dtype=torch.float16,
+        dtype=torch.float16,
     )
 
     print(f"Loading LoRA adapter from: {args.adapter}")

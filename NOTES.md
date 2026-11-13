@@ -10,21 +10,21 @@ For humans, patterns are one of the first things you can probably remember from 
 
 Simple examples of pattern data:
 
-Explain the pattern
-1, 2, 3, 4
-The integer numbers in order
+instruction: Explain the pattern
+input: 1, 2, 3, 4
+output: The integer numbers in order
 
 
-Find the next item in the pattern
-1, 2, 3, 4
-5
+instruction: Find the next item in the pattern
+input: 1, 2, 3, 4
+output: 5
 
 
-Where does the pattern break and why
-1, 2, 3, 4, 6
-The pattern is integer numbers in order.  The 6 should be a 5.
+instruction: Where does the pattern break and why
+input: 1, 2, 3, 4, 6
+output: The pattern is integer numbers in order.  The 6 should be a 5.
 
 
-Where does the pattern break and why
-1, 2, 4, 5, 6
-The pattern is integer numbers in order.  3 is skipped.
+instruction: Where does the pattern break and why
+input: 1, 2, 4, 5, 6
+output: The pattern is integer numbers in order.  3 is skipped.

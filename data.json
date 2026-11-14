@@ -1,27 +1,952 @@
 [
   {
-    "instruction": "What is machine learning?",
-    "input": "",
-    "output": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."
+    "instruction": "Explain the pattern",
+    "input": "2, 4, 6, 8, 10",
+    "output": "Even numbers in order"
   },
   {
-    "instruction": "Explain neural networks simply.",
-    "input": "",
-    "output": "Neural networks are computing systems inspired by the human brain. They consist of interconnected layers of nodes that process information by transforming inputs through weighted connections."
+    "instruction": "Explain the pattern",
+    "input": "1, 3, 5, 7, 9",
+    "output": "Odd numbers in order"
   },
   {
-    "instruction": "What is a transformer model?",
-    "input": "",
-    "output": "A transformer is a deep learning architecture that uses self-attention mechanisms to process sequences. It allows the model to weigh the importance of different parts of the input simultaneously, making it highly effective for language tasks."
+    "instruction": "Explain the pattern",
+    "input": "0, 2, 4, 6, 8",
+    "output": "Even numbers starting from 0"
   },
   {
-    "instruction": "What is overfitting in ML?",
-    "input": "",
-    "output": "Overfitting happens when a model learns the training data too well, including its noise and outliers. The result is high accuracy on training data but poor performance on new, unseen data."
+    "instruction": "Explain the pattern",
+    "input": "1, 4, 9, 16, 25",
+    "output": "Perfect squares: 1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2, 5\u00b2"
   },
   {
-    "instruction": "What is transfer learning?",
-    "input": "",
-    "output": "Transfer learning is when a model trained on one task is repurposed as the starting point for a model on a second task. It leverages learned features from the first task to improve performance on the new task with less data."
+    "instruction": "Explain the pattern",
+    "input": "1, 8, 27, 64, 125",
+    "output": "Perfect cubes: 1\u00b3, 2\u00b3, 3\u00b3, 4\u00b3, 5\u00b3"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 3, 5, 7, 11, 13",
+    "output": "Prime numbers in order"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 1, 2, 3, 5, 8, 13",
+    "output": "Fibonacci sequence: each number is the sum of the two preceding ones"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 8, 16, 32",
+    "output": "Powers of 2: 2\u2070, 2\u00b9, 2\u00b2, 2\u00b3, 2\u2074, 2\u2075"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 3, 6, 10, 15, 21",
+    "output": "Triangular numbers: each is the sum of consecutive integers (1; 1+2; 1+2+3; etc.)"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "5, 10, 15, 20, 25",
+    "output": "Multiples of 5"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "3, 6, 12, 24, 48",
+    "output": "Each number is double the previous one"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 6, 24, 120",
+    "output": "Factorials: 1!, 2!, 3!, 4!, 5!"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "10, 20, 30, 40, 50",
+    "output": "Multiples of 10"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "100, 90, 80, 70, 60",
+    "output": "Counting down by 10"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 5, 10, 17, 26",
+    "output": "Each number is n\u00b2+1: 0\u00b2+1, 1\u00b2+1, 2\u00b2+1, 3\u00b2+1, 4\u00b2+1"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 6, 12, 20, 30",
+    "output": "n(n+1): 1\u00d72, 2\u00d73, 3\u00d74, 4\u00d75, 5\u00d76"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 5, 10, 17",
+    "output": "n\u00b2+1: 0\u00b2+1, 1\u00b2+1, 2\u00b2+1, 3\u00b2+1, 4\u00b2+1"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "7, 14, 21, 28, 35",
+    "output": "Multiples of 7"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "3, 5, 8, 13, 21",
+    "output": "Fibonacci starting from 3, 5: each number is the sum of the two preceding ones"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 5, 8, 13, 21, 34",
+    "output": "Fibonacci sequence: each number is the sum of the two preceding ones"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 4, 10, 20, 35",
+    "output": "Tetrahedral numbers: the sum of consecutive triangular numbers"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 8, 27, 64, 125, 216",
+    "output": "Perfect cubes: 1\u00b3, 2\u00b3, 3\u00b3, 4\u00b3, 5\u00b3, 6\u00b3"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 4, 8, 16, 32, 64",
+    "output": "Powers of 2: each number is 2 raised to increasing exponents"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 1, 1, 2, 3, 5, 8, 13",
+    "output": "Fibonacci sequence starting from three 1s"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "9, 18, 27, 36, 45",
+    "output": "Multiples of 9"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 7, 11, 16",
+    "output": "Each term increases by n: +1, +2, +3, +4, +5, +6"
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "0, 1, 1, 2, 3, 5, 8, 13",
+    "output": "Fibonacci sequence starting from 0, 1"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 3, 5, 7, 9",
+    "output": "11"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 4, 9, 16, 25",
+    "output": "36"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 2, 4, 8, 16",
+    "output": "32"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "2, 6, 12, 20, 30",
+    "output": "42"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 1, 2, 3, 5, 8",
+    "output": "13"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "3, 6, 12, 24, 48",
+    "output": "96"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "10, 20, 30, 40, 50",
+    "output": "60"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 3, 6, 10, 15",
+    "output": "21"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 2, 6, 24, 120",
+    "output": "720"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 4, 10, 20, 35",
+    "output": "56"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "2, 3, 5, 7, 11",
+    "output": "13"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "7, 14, 21, 28, 35",
+    "output": "42"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "0, 1, 1, 2, 3, 5",
+    "output": "8"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 5, 10, 17, 26",
+    "output": "37"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "100, 81, 64, 49, 36",
+    "output": "25"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 8, 27, 64, 125",
+    "output": "216"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "2, 4, 7, 11, 16",
+    "output": "22"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 2, 3, 5, 8",
+    "output": "13"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "5, 10, 20, 40, 80",
+    "output": "160"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 3, 6, 10, 15",
+    "output": "21"
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 4, 8, 15",
+    "output": "The pattern is powers of 2: 1, 2, 4, 8, 16. The 15 should be 16."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 4, 6, 9, 10",
+    "output": "The pattern is even numbers. 9 is odd and breaks the pattern."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 3, 5, 8, 9",
+    "output": "The pattern is odd numbers. 8 is even and breaks the pattern."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 5, 7, 12",
+    "output": "The pattern is prime numbers. 12 is not prime and breaks the pattern."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 4, 9, 15, 25",
+    "output": "The pattern is perfect squares: 1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2, 5\u00b2. The 15 should be 16 (4\u00b2)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 5, 8, 14",
+    "output": "The pattern is Fibonacci. 14 breaks the pattern; it should be 13 (5+8)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "3, 6, 9, 12, 14",
+    "output": "The pattern is multiples of 3. 14 is not a multiple of 3 and breaks the pattern."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 8, 27, 63, 125",
+    "output": "The pattern is perfect cubes: 1\u00b3, 2\u00b3, 3\u00b3, 4\u00b3, 5\u00b3. The 63 should be 64 (4\u00b3)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 3, 5, 7, 10",
+    "output": "The pattern is prime numbers. 10 is not prime and breaks the pattern."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 3, 6, 11, 15",
+    "output": "The pattern is triangular numbers: +2, +3, +4, +5. The 11 should be 10 (6+4), and 15 should be 15 (10+5). The break is at 11."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "10, 20, 30, 50, 50",
+    "output": "The pattern is multiples of 10. The first 50 breaks the pattern; it should be 40."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 4, 8, 16, 31",
+    "output": "The pattern is powers of 2. 31 breaks the pattern; it should be 32."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "5, 10, 15, 25, 30",
+    "output": "The pattern is multiples of 5. The 25 breaks the pattern; it should be 20."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 1, 2, 3, 7, 13",
+    "output": "The pattern is Fibonacci. 7 breaks the pattern; it should be 5 (the sum of 2+3)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 4, 8, 16, 33",
+    "output": "The pattern is powers of 2. 33 breaks the pattern; it should be 32."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 4, 9, 16, 24",
+    "output": "The pattern is perfect squares. 24 breaks the pattern; it should be 25 (5\u00b2)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "3, 5, 8, 12, 17",
+    "output": "The pattern increases by +2, +3, +4, +5. 17 is correct (12+5). The pattern holds."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 6, 9, 27",
+    "output": "The pattern is: \u00d71, +1, \u00d72, +3, \u00d73. This is complex. A simpler pattern: each pair multiplies \u2014 1\u00d72=2, 3\u00d73=9, but 6 and 9 break this. The break is at 6; the pattern could be 1, 2, 3, 6, 18, 54 (\u00d73 each step after 3)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 4, 7, 13",
+    "output": "The pattern increases by +1, +2, +3, +4. 13 breaks the pattern; it should be 11 (7+4)."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "0, 2, 6, 12, 20, 31",
+    "output": "The pattern is n(n-1): 0, 2, 6, 12, 20, 30. The 31 breaks the pattern; it should be 30."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 3, 5, 7, 12",
+    "output": "The pattern is odd numbers. 12 breaks the pattern; it should be 9."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "function getUser() { ... }\nfunction createUser() { ... }\nfunction deleteUser() { ... }\nfunction updateUser() { ... }",
+    "output": "CRUD operations for a user resource. Each function handles one basic operation: Create, Read, Update, Delete."
+  },
+  {
+    "instruction": "Where does the code pattern break and why",
+    "input": "function getUser(id) { ... }\nfunction createUser(user) { ... }\nfunction deletePost(id) { ... }\nfunction updateUser(id, data) { ... }",
+    "output": "The pattern is CRUD operations for a single resource. deletePost breaks the pattern because it operates on 'post' instead of 'user'."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "class UserService {\n  get(id) { ... }\n  create(data) { ... }\n  delete(id) { ... }\n}",
+    "output": "A class-based service pattern for user operations. Methods are concise verbs: get, create, delete."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "router.get('/users', handler)\nrouter.post('/users', handler)\nrouter.put('/users/:id', handler)\nrouter.delete('/users/:id', handler)",
+    "output": "RESTful API routing pattern. Four HTTP methods map to CRUD operations on a /users resource."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "if (condition) {\n  return value1;\n}\nif (condition) {\n  return value2;\n}\nif (condition) {\n  return value3;\n}",
+    "output": "Multiple independent if-return statements. Each condition is checked separately and returns early if true."
+  },
+  {
+    "instruction": "Where does the code pattern break and why",
+    "input": "if (condition) {\n  return value1;\n}\nif (condition) {\n  return value2;\n}\nif (condition) {\n  return value3;\n} else {\n  return value4;\n}",
+    "output": "The pattern is multiple independent if-return blocks. The last block uses if-else instead of a standalone if, breaking the consistent pattern."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "try {\n  // operation\n} catch (error) {\n  // handle error\n}\ntry {\n  // operation\n} catch (error) {\n  // handle error\n}",
+    "output": "Consistent try-catch error handling pattern. Each operation is wrapped in the same try-catch structure."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "const user = await User.findById(id);\nconst posts = await Post.find({ userId: id });\nconst comments = await Comment.find({ postId: postIds });",
+    "output": "Sequential async database queries fetching related data: user, then their posts, then comments on those posts."
+  },
+  {
+    "instruction": "Where does the code pattern break and why",
+    "input": "const user = await User.findById(id);\nconst posts = await Post.find({ userId: id });\nconst config = loadConfig();",
+    "output": "The pattern is sequential database queries for related data. loadConfig() breaks the pattern because it reads from a config file, not the database."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "function validateEmail(email) {\n  if (!email) return false;\n  const regex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n  return regex.test(email);\n}",
+    "output": "Input validation pattern: check for empty value first, then validate format with a regex pattern."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "app.use(express.json());\napp.use(cors());\napp.use(helmet());\napp.use(morgan('dev'));",
+    "output": "Express middleware installation pattern. Each line adds a standard middleware layer for parsing, security, and logging."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "app.use(express.json());\napp.use(cors());\napp.use(helmet());\napp.set('port', process.env.PORT);",
+    "output": "The pattern is middleware registration with app.use(). The set() call breaks the pattern because it's configuration, not middleware."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "module.exports = {\n  addUser,\n  removeUser,\n  listUsers,\n};",
+    "output": "Module export pattern using object shorthand. Each function is exported as a named key matching its function name."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "const handler = async (req, res) => {\n  try {\n    const data = await service.getData();\n    res.json(data);\n  } catch (err) {\n    res.status(500).json({ error: err.message });\n  }\n};",
+    "output": "Express route handler pattern: async function with try-catch, service call, JSON response on success, error response on failure."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "const handler = async (req, res) => {\n  try {\n    const data = await service.getData();\n    res.json(data);\n  } catch (err) {\n    res.status(400).json({ error: err.message });\n  }\n};",
+    "output": "The pattern is an error handler returning 500 (server error). The 400 status code breaks the pattern because 400 is a client error, not a server error."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "git add .\ngit commit -m \"fix: resolve login bug\"\ngit push origin main",
+    "output": "Git workflow pattern: stage all changes, commit with conventional commit format (type: description), push to main branch."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "git add .\ngit commit -m \"update file\"\ngit push origin main",
+    "output": "The pattern uses conventional commits (type: description). 'update file' breaks the pattern because it lacks the type prefix and is too vague."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "import { useState, useEffect } from 'react';\nimport { useSelector, useDispatch } from 'react-redux';\nimport { useParams, useNavigate } from 'react-router';",
+    "output": "React hooks import pattern. Each line imports hooks from a specific library: state/lifecycle, state management, and routing."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "describe('UserService', () => {\n  it('should create a user', () => { ... });\n  it('should delete a user', () => { ... });\n  it('should throw on invalid input', () => { ... });\n});",
+    "output": "Test suite pattern using describe-it structure. Each test case describes one behavior of the service."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "The cat sat on the mat. The cat jumped off the mat. The cat ran across the yard.",
+    "output": "Simple sentence structure with the same subject ('The cat') and active voice. Each sentence follows Subject-Verb-Object pattern."
+  },
+  {
+    "instruction": "Where does the writing pattern break and why",
+    "input": "The cat sat on the mat. The cat jumped off the mat. On the mat sat the cat.",
+    "output": "The pattern is active voice with 'The cat' as the subject at the start. The third sentence breaks the pattern by using passive-style inversion."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "First, preheat the oven. Second, mix the ingredients. Third, bake for 30 minutes.",
+    "output": "Sequential instructional writing pattern. Each step is numbered and begins with a transitional word (First, Second, Third)."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "First, preheat the oven. Second, mix the ingredients. Finally, bake for 30 minutes.",
+    "output": "The pattern uses ordinal numbering (First, Second, Third). 'Finally' breaks the pattern because it's not an ordinal and implies the last of more steps."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "She was tired. She was hungry. She was ready to go home.",
+    "output": "Repetitive sentence structure with 'She was' as the opening phrase. Each sentence follows the same Subject-Verb-Adjective pattern."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "She was tired. She was hungry. She went home.",
+    "output": "The pattern is 'She was' followed by an adjective. 'She went home' breaks the pattern by using a different verb structure."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "The sky was blue. The grass was green. The flowers were red.",
+    "output": "Descriptive pattern: 'The [noun] was [color].' Each sentence describes a natural element with a simple subject-verb-adjective structure."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "In the beginning, there was nothing. Then light appeared. Then darkness fell. Then life emerged.",
+    "output": "Narrative progression pattern. Each sentence describes a stage of creation, using temporal markers to show sequence."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "In the beginning, there was nothing. Then light appeared. Then darkness fell. The story continues.",
+    "output": "The pattern describes stages of creation with 'Then [event].' 'The story continues' breaks the pattern by commenting on the narrative instead of describing a creation event."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "The project failed because the deadline was too short. The project failed because the budget was cut. The project failed because the team left.",
+    "output": "Repetition of 'The project failed because' as a framing device, each time revealing a different cause. This creates emphasis through parallel structure."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "He opened the door. He stepped inside. He closed the door. He looked around.",
+    "output": "Simple action sequence. Each sentence is one verb phrase, describing discrete actions in chronological order."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "He opened the door. He stepped inside. He closed the door. He realized he was lost.",
+    "output": "The pattern is physical actions (opened, stepped, closed, looked). 'He realized' breaks the pattern by describing an internal mental state instead of a physical action."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1+2=3, 2+3=5, 3+4=7, 4+5=9",
+    "output": "Consecutive integers added together: n + (n+1) = 2n+1, producing odd numbers."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1\u00d71=1, 2\u00d72=4, 3\u00d73=9, 4\u00d74=16",
+    "output": "A number multiplied by itself: n\u00d7n = n\u00b2, producing perfect squares."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1+2=3, 1+2+3=6, 1+2+3+4=10, 1+2+3+4+5=15",
+    "output": "Cumulative sums: each line adds the next integer to the previous sum. These are triangular numbers."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2\u2070=1, 2\u00b9=2, 2\u00b2=4, 2\u00b3=8, 2\u2074=16",
+    "output": "Powers of 2: 2 raised to increasing exponents starting from 0."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "10\u00b9=10, 10\u00b2=100, 10\u00b3=1000, 10\u2074=10000",
+    "output": "Powers of 10: each adds one zero. 10 raised to increasing exponents."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "3\u00d73=9, 5\u00d75=25, 7\u00d77=49, 9\u00d79=81",
+    "output": "Squares of consecutive odd numbers: (2n+1)\u00b2 for n=1,2,3,4."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1\u00b2+1=2, 2\u00b2+1=5, 3\u00b2+1=10, 4\u00b2+1=17",
+    "output": "Each number is n\u00b2+1: square the position number and add 1."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 7, 11, 16, 22",
+    "output": "Each term increases by +1, +2, +3, +4, +5, +6. The increment increases by 1 each time."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 6, 24, 120, 720",
+    "output": "Factorials: 1!, 2!, 3!, 4!, 5!, 6!. Each term is n! = n \u00d7 (n-1) \u00d7 ... \u00d7 1."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 6, 11, 20, 37",
+    "output": "Each number is the sum of the three preceding numbers: 1+2+3=6, 2+3+6=11, 3+6+11=20, 6+11+20=37 (Tribonacci sequence)."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "A \u2192 B, B \u2192 C, C \u2192 D",
+    "output": "Chain of logical implications. If A is true, then B is true; if B is true, then C is true; therefore A implies D."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "A \u2192 B, B \u2192 C, D \u2192 E",
+    "output": "The pattern is a chain: A\u2192B\u2192C. D\u2192E breaks the chain because it starts a new unconnected implication."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "If it rains, the ground is wet. It is raining. Therefore, the ground is wet.",
+    "output": "Modus ponens: a classic logical form. If P then Q. P is true. Therefore Q is true."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "If it rains, the ground is wet. The ground is wet. Therefore, it is raining.",
+    "output": "The pattern is modus ponens (If P then Q; P; therefore Q). This breaks it: it uses the ground being wet (Q) to conclude it rained (P), which is the fallacy of affirming the consequent."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "All humans are mortal. Socrates is human. Therefore, Socrates is mortal.",
+    "output": "Syllogism: a classic deductive argument. Major premise, minor premise, conclusion. If all A are B, and x is A, then x is B."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "All humans are mortal. Socrates is mortal. Therefore, Socrates is human.",
+    "output": "The pattern is a valid syllogism. This breaks it: it concludes the minor premise from the conclusion, which is invalid. Mortal things include animals, not just humans."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "Monday, Tuesday, Wednesday, Thursday, Friday",
+    "output": "Weekdays in order: the five standard workdays of the week."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "Monday, Tuesday, Wednesday, Friday, Saturday",
+    "output": "The pattern is weekdays in order. Friday breaks the pattern because Thursday is skipped."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "January, February, March, April, May, June",
+    "output": "The first six months of the calendar year in order."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "January, February, March, June, May",
+    "output": "The pattern is months in order. June breaks the pattern because it comes before May; May and June are swapped."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "Red, Orange, Yellow, Green, Blue, Indigo, Violet",
+    "output": "Colors of the rainbow in spectral order: ROYGBIV."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "Red, Orange, Yellow, Green, Blue, Violet, Indigo",
+    "output": "The pattern is rainbow colors in spectral order. Violet and Indigo are swapped; Indigo should come before Violet."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "Spring, Summer, Autumn, Winter",
+    "output": "The four seasons in their natural yearly order."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "North, East, South, West",
+    "output": "Cardinal directions in clockwise order starting from North."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "North, East, West, South",
+    "output": "The pattern is cardinal directions in clockwise order. West breaks the pattern; it should come after South, not between East and South."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "Birth, Growth, Reproduction, Death",
+    "output": "The life cycle pattern: an organism is born, grows, reproduces, and dies. This is the fundamental cycle of living things."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, Waning Crescent",
+    "output": "Lunar phases in order through one complete moon cycle."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "Waxing Crescent, First Quarter, Full Moon, Waxing Gibbous, Waning Gibbous",
+    "output": "The pattern is lunar phases in order. Full Moon breaks the pattern; it should come after Waxing Gibbous, not before it."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "a, b, c, d, f",
+    "output": "The pattern is consecutive letters. f breaks the pattern; e is missing."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "a, b, d, e, f",
+    "output": "The pattern is consecutive letters. d breaks the pattern; c is missing."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "A, B, C, E, F",
+    "output": "The pattern is consecutive uppercase letters. E breaks the pattern; D is missing."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 4, 5, 7, 8",
+    "output": "The pattern is consecutive integers. 7 breaks the pattern; 6 is missing."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "100, 99, 97, 95, 94",
+    "output": "The pattern decreases by 1, then 2: -1, -1, -2, -2, -1. The sequence is -1, -1, -2, -2, -1. Actually the pattern is decreasing by 1 each time: 100, 99, 98, 97, 96. 97 breaks (should be 98), 95 breaks (should be 97), and 94 breaks (should be 96). The first break is at 97."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 3, 5, 8, 13",
+    "output": "The pattern is Fibonacci. 8 breaks the pattern; it should be 7 (5+5 doesn't work \u2014 the pattern is 2+3=5, 3+5=8, 5+8=13. Actually 8 is correct. Let me reconsider: 2, 3, 5, 8, 13 is a valid Fibonacci sequence. The pattern holds."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 3, 5, 8, 12",
+    "output": "The pattern is Fibonacci (each term = sum of previous two): 2+3=5, 3+5=8, 5+8=13. 12 breaks the pattern; it should be 13."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 4, 6, 8, 9",
+    "output": "The pattern could be natural numbers. 6 is fine, but 8 skips 7. The break is at 8; 7 is missing."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "const name = req.body.name;\nconst email = req.body.email;\nconst password = req.body.password;",
+    "output": "Destructuring request body fields. Each line extracts a specific field from the incoming request payload."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "const name = req.body.name;\nconst email = req.body.email;\nconst age = req.query.age;",
+    "output": "The pattern extracts fields from req.body. req.query.age breaks the pattern because it reads from the query string, not the request body."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "SELECT * FROM users WHERE active = true;\nSELECT * FROM posts WHERE user_id = 1;\nSELECT * FROM comments WHERE post_id = 5;",
+    "output": "SQL query pattern: SELECT * FROM [table] WHERE [condition]. Each query fetches all records from a table filtered by a specific condition."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "SELECT * FROM users WHERE active = true;\nINSERT INTO users (name) VALUES ('Alice');\nSELECT * FROM posts WHERE user_id = 1;",
+    "output": "The pattern is SELECT queries filtering from tables. INSERT INTO breaks the pattern because it adds data rather than querying it."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "def add(a, b): return a + b\ndef subtract(a, b): return a - b\ndef multiply(a, b): return a * b\ndef divide(a, b): return a / b",
+    "output": "Basic arithmetic operations pattern. Each function takes two arguments and returns the result of one mathematical operation."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "const data = { id: 1, name: 'Alice', email: 'alice@example.com' };\nconst data2 = { id: 2, name: 'Bob', email: 'bob@example.com' };",
+    "output": "Object literal pattern representing data records. Each object has the same shape (id, name, email) with different values."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 2, 3, 3, 3, 4, 4, 4, 4",
+    "output": "Each number n appears n times: one 1, two 2s, three 3s, four 4s."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 0, 1, 0, 1, 0, 1, 0",
+    "output": "Alternating 1 and 0: 1, 0, 1, 0, ... repeating pattern of period 2."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 1, 2, 1, 2, 1, 2",
+    "output": "Alternating 1 and 2: 1, 2, 1, 2, ... repeating pattern of period 2."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 1, 2, 3, 1, 2, 3",
+    "output": "Repeating sequence of 1, 2, 3: the pattern cycles with period 3."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 1, 2, 1, 2, 3, 1, 2, 3, 4",
+    "output": "Counting up in expanding ranges: 1; then 1,2; then 1,2,3; then 1,2,3,4. Each segment starts from 1 and adds one more number."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 3, 6, 12, 5, 10, 20",
+    "output": "Three interleaved patterns: (1, 3, 5) odd numbers; (2, 6, 10) multiples of 2 offset by 1; (4, 12, 20) multiples of 4 offset by 0. Actually: positions 1,4,7 are 1,3,5 (odds); positions 2,5,8 are 2,6,10 (+4 each); positions 3,6,9 are 4,12,20 (\u00d73 each)."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 6, 5, 10, 7, 14",
+    "output": "Two interleaved sequences: odd numbers (1, 3, 5, 7) and their doubles (2, 6, 10, 14)."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "0, 1, 0, 2, 0, 3, 0, 4, 0, 5",
+    "output": "Alternating 0 with increasing integers: 0, 1, 0, 2, 0, 3, 0, 4, ... Even positions are 0; odd positions count up."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 2, 4, 4, 6, 6, 8, 8",
+    "output": "Each even number appears twice in sequence: 2\u00d72, 4\u00d72, 6\u00d72, 8\u00d72."
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 1, 2, 1, 2, 3, 1, 2, 3, 4",
+    "output": "5"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "0, 1, 0, 2, 0, 3, 0, 4",
+    "output": "0"
+  },
+  {
+    "instruction": "Find the next item in the pattern",
+    "input": "1, 2, 2, 3, 3, 3, 4, 4",
+    "output": "4"
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "I went to the store. I bought some milk. I drove home.",
+    "output": "First-person narrative with simple past tense. Each sentence starts with 'I' followed by a verb, creating a consistent subject-action structure."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "I went to the store. I bought some milk. The store was crowded.",
+    "output": "The pattern is first-person actions ('I went', 'I bought'). 'The store was crowded' breaks the pattern by shifting to third-person observation."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "The big red ball rolled. The tall green tree swayed. The fast blue car sped.",
+    "output": "Adjective-noun-verb pattern. Each sentence follows: The [adjective] [noun] [verb]. Three adjectives, three nouns, three verbs in parallel structure."
+  },
+  {
+    "instruction": "Where does the writing pattern breaks and why",
+    "input": "The big red ball rolled. The tall green tree swayed. Ball rolled fast.",
+    "output": "The pattern is 'The [adj] [noun] [verb].' 'Ball rolled fast' breaks the pattern: it lacks 'The', has no second adjective, and adds an adverb."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "The end. The end. The end.",
+    "output": "Repetition of the same three-word phrase. The pattern is emphasis through exact repetition."
+  },
+  {
+    "instruction": "Explain the writing pattern",
+    "input": "One word. Two words here. Three words in this sentence now.",
+    "output": "Increasing word count: 2 words, 3 words, 5 words. Actually: 2, 3, 5. The pattern increases by 1, then 2. Or: the number of words increases: 2, 3, 5."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "const a = 1;\nconst b = 2;\nconst c = 3;\nlet d = 4;",
+    "output": "The pattern is const declarations. 'let d = 4' breaks the pattern because it uses 'let' instead of 'const'."
+  },
+  {
+    "instruction": "Where does the code pattern breaks and why",
+    "input": "const name = 'Alice';\nconst age = 30;\nconst name = 'Bob';",
+    "output": "The pattern is unique const declarations. The second 'const name' breaks the pattern because 'name' is already declared and cannot be redeclared with const."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "arr.forEach(item => {\n  console.log(item);\n});\narr.forEach(item => {\n  console.log(item * 2);\n});",
+    "output": "Array iteration pattern using forEach with arrow functions. Each call iterates the array and applies a callback function."
+  },
+  {
+    "instruction": "Explain the code pattern",
+    "input": "obj.key1 = 'value1';\nobj.key2 = 'value2';\nobj.key3 = 'value3';",
+    "output": "Sequential property assignment pattern. Each line sets a new property on the object with a unique key."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1+1=2, 2+2=4, 3+3=6, 4+4=8",
+    "output": "Each number added to itself: n+n = 2n, producing even numbers in order."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1-1=0, 2-1=1, 3-1=2, 4-1=3",
+    "output": "Each number minus 1: n-1. Produces one less than the input number."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1\u00f71=1, 2\u00f71=2, 3\u00f71=3, 4\u00f71=4",
+    "output": "Each number divided by 1: n\u00f71 = n. The result is always the original number."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1\u00d71=1, 2\u00d72=4, 3\u00d73=9, 4\u00d74=16, 5\u00d75=25",
+    "output": "A number multiplied by itself: n\u00d7n = n\u00b2, producing perfect squares."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 8, 16, 32, 64, 128",
+    "output": "Powers of 2: each term doubles the previous one. 2\u2070, 2\u00b9, 2\u00b2, ..., 2\u2077."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 3, 9, 27, 81, 243",
+    "output": "Powers of 3: 3\u2070, 3\u00b9, 3\u00b2, 3\u00b3, 3\u2074, 3\u2075. Each term is triple the previous one."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 5, 25, 125, 625",
+    "output": "Powers of 5: 5\u2070, 5\u00b9, 5\u00b2, 5\u00b3, 5\u2074. Each term is five times the previous one."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "100, 50, 25, 12.5, 6.25",
+    "output": "Each term is half the previous: \u00f72 repeatedly."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "3, 9, 27, 81, 243",
+    "output": "Powers of 3 starting from 3\u00b9: 3\u00b9, 3\u00b2, 3\u00b3, 3\u2074, 3\u2075."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+    "output": "Counting forward by 1 from 1 to 10: natural numbers in ascending order."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+    "output": "Counting backward by 1 from 10 to 1: natural numbers in descending order."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 4, 5, 7, 6",
+    "output": "The pattern is counting up by 1. 7 breaks the pattern; it should be 6, and 6 should be 7. The numbers 6 and 7 are swapped."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 4, 7, 11, 16, 22, 29",
+    "output": "Each term increases by n: +1, +2, +3, +4, +5, +6, +7. The increment grows by 1 each step."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 3, 7, 15, 31, 63",
+    "output": "Each term is 2\u207f-1: 2\u00b9-1=1, 2\u00b2-1=3, 2\u00b3-1=7, 2\u2074-1=15, 2\u2075-1=31, 2\u2076-1=63. Or: each term is double the previous plus 1."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 5, 10, 17, 26, 37",
+    "output": "Each term is n\u00b2+1: 1\u00b2+1=2, 2\u00b2+1=5, 3\u00b2+1=10, 4\u00b2+1=17, 5\u00b2+1=26, 6\u00b2+1=37."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "2, 5, 10, 17, 27, 37",
+    "output": "The pattern is n\u00b2+1: 1+1=2, 4+1=5, 9+1=10, 16+1=17, 25+1=26. The 27 breaks the pattern; it should be 26."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 4, 13, 40, 121, 364",
+    "output": "Each term is 3\u00d7previous + 1: 1\u00d73+1=4, 4\u00d73+1=13, 13\u00d73+1=40, 40\u00d73+1=121, 121\u00d73+1=364."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "0, 1, 3, 6, 10, 15, 21",
+    "output": "Triangular numbers: each term adds the next integer: 0; 0+1=1; 1+2=3; 3+3=6; 6+4=10; 10+5=15; 15+6=21."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "0, 1, 3, 6, 11, 15",
+    "output": "Triangular numbers: +1, +2, +3, +4, +5. 11 breaks the pattern; it should be 10 (6+4). 15 is correct (10+5)."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 5, 8, 13, 21, 34, 55",
+    "output": "Fibonacci sequence: each number is the sum of the two preceding numbers."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 1, 2, 3, 5, 8, 13, 21",
+    "output": "Fibonacci sequence starting from 1, 1: each number is the sum of the two preceding ones."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "2, 2, 4, 6, 10, 16, 26",
+    "output": "Pell-like sequence: each number is the sum of the two preceding ones starting from 2, 2. Also known as the Pell numbers."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 2, 3, 5, 7, 11, 13, 17",
+    "output": "Prime numbers in order: numbers greater than 1 that have no divisors other than 1 and themselves."
+  },
+  {
+    "instruction": "Where does the pattern break and why",
+    "input": "1, 2, 3, 5, 8, 11, 13",
+    "output": "The pattern is prime numbers. 8 breaks the pattern; it is not prime (divisible by 2)."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "10, 100, 1000, 10000",
+    "output": "Powers of 10: 10\u00b9, 10\u00b2, 10\u00b3, 10\u2074. Each adds one zero."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "5, 25, 125, 625, 3125",
+    "output": "Powers of 5: 5\u00b9, 5\u00b2, 5\u00b3, 5\u2074, 5\u2075."
+  },
+  {
+    "instruction": "Explain the pattern",
+    "input": "1, 8, 27, 64, 125, 216",
+    "output": "Perfect cubes: 1\u00b3, 2\u00b3, 3\u00b3, 4\u00b3, 5\u00b3, 6\u00b3."
   }
 ]

@@ -6,7 +6,7 @@ It is why we like music.  Music is patterns, and breaking patterns.  You enjoy l
 
 For humans, patterns are one of the first things you can probably remember from when you were a little kid.  Learning to clap your hands in some kind of rythm.  The patterns of your daily life, and the time the pattern was broken and you got to go somewhere new.
 
-
+A model could be trained on patterns, explaining patterns, finding the next item in a pattern, finding where a pattern breaks.  These can start with simple number patterns, but they could go to much larger concepts.  For example, you examine a script in a codebase, all things are done with modules creating very clean code, but one area is made up of dozens of lines of inline code that could be a module.  This inline code is a break in the pattern.  In writing you could have several paragraphs in a row that are written in third person, and then one that is written in first person.  This is a break in the pattern. 
 
 Simple examples of pattern data:
 
